@@ -65,3 +65,5 @@ mod url;
 #[cfg(feature = "uuid")]
 mod uuid;
 mod wrapper;
+
+mod diem_types;
