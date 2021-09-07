@@ -3,7 +3,7 @@ use crate::schema::*;
 use crate::JsonSchema;
 use diem_crypto::HashValue;
 use move_core_types::account_address::AccountAddress;
-
+use parity_multiaddr::Multiaddr;
 impl JsonSchema for AccountAddress {
     no_ref_schema!();
 
@@ -31,6 +31,22 @@ impl JsonSchema for HashValue {
         SchemaObject {
             instance_type: Some(InstanceType::String.into()),
             format: Some("HashValue".to_owned()),
+            ..Default::default()
+        }
+        .into()
+    }
+}
+impl JsonSchema for Multiaddr {
+    no_ref_schema!();
+
+    fn schema_name() -> String {
+        "Multiaddr".to_owned()
+    }
+
+    fn json_schema(_: &mut SchemaGenerator) -> Schema {
+        SchemaObject {
+            instance_type: Some(InstanceType::String.into()),
+            format: Some("Multiaddr".to_owned()),
             ..Default::default()
         }
         .into()
