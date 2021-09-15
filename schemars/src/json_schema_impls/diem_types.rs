@@ -3,7 +3,7 @@ use crate::schema::*;
 use crate::JsonSchema;
 use diem_crypto::HashValue;
 use move_core_types::account_address::AccountAddress;
-use parity_multiaddr::Multiaddr;
+use multiaddr::Multiaddr;
 impl JsonSchema for AccountAddress {
     no_ref_schema!();
 
