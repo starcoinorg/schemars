@@ -27,8 +27,8 @@ arrayvec = { version = "0.5", default-features = false, optional = true }
 url = { version = "2.0", default-features = false, optional = true }
 bytes = { version = "1.0", optional = true }
 multiaddr = { version = "0.13.0" }
-move-core-types = { git = "https://github.com/starcoinorg/diem", rev = "94cad072661257a7d55713d6a6df81638a9580ae" }
-diem-crypto = { package="diem-crypto",  git = "https://github.com/starcoinorg/diem", rev="94cad072661257a7d55713d6a6df81638a9580ae", features = ["fuzzing"] }
+move-core-types = { git = "https://github.com/starcoinorg/diem", rev = "59f3187dabfcd4fdf5f1a3d0248ca67a27aba498" }
+diem-crypto = { package="diem-crypto",  git = "https://github.com/starcoinorg/diem", rev="59f3187dabfcd4fdf5f1a3d0248ca67a27aba498", features = ["fuzzing"] }
 
 [dev-dependencies]
 pretty_assertions = "0.6.1"
