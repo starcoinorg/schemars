@@ -1,7 +1,7 @@
 use crate::gen::SchemaGenerator;
 use crate::schema::*;
 use crate::JsonSchema;
-use diem_crypto::HashValue;
+use starcoin_crypto::HashValue;
 use move_core_types::account_address::AccountAddress;
 use multiaddr::Multiaddr;
 impl JsonSchema for AccountAddress {
