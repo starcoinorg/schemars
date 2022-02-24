@@ -28,7 +28,7 @@ url = { version = "2.0", default-features = false, optional = true }
 bytes = { version = "1.0", optional = true }
 multiaddr = { version = "0.13.0" }
 move-core-types = { git = "https://github.com/starcoinorg/move", rev="1d252312cdce83c10c93be349c21390a2b9a465a" }
-starcoin-crypto = { git = "https://github.com/starcoinorg/starcoin-crypto", rev="e2ed4bfd60eeca3d95da869ff978ab4596048761", features = ["fuzzing"] }
+starcoin-crypto = { git = "https://github.com/starcoinorg/starcoin-crypto", rev="b4887ba2f28171c0e1d825a03d6ab7fd456a7a02", features = ["fuzzing"] }
 
 [dev-dependencies]
 pretty_assertions = "0.6.1"
